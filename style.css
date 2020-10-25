@@ -1,14 +1,38 @@
 body {
-    text-align: center ;
-    background-color: chartreuse ;
+    text-align: center;
+    background-color: chartreuse;
 }
+
 h1 {
-   text-shadow: 2px 2px 5px red; 
+    text-shadow: 2px 2px 5px red;
     text-decoration: underline;
 }
+
 img {
-    width: 220px ; 
-    height: 220px ;
-    margin-left: 20px ;
-    margin-right: 20px ;
+    width: 220px;
+    height: 220px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.links {
+    text-decoration: none;
+    padding-bottom: 5px;
+    padding-left: 19px;
+    padding-right: 19px;
+    padding-top: 5px;
+    padding-top: 5px;
+    display: inline;
+    text-shadow: 4px 4px 5px red;
+    color: dodgerblue;
+    font-family: cursive;
+    font-size: 30px;
+}
+
+.menu {
+    list-style: none;
+}
+.right_slide {
+    vertical-align: middle ;
+    background-color: white ;
 }

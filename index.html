@@ -1,27 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My profile Webpage</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <section id="apps" > <h1 id="appH1">My Apps</h1> 
-    <iframe width="385" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/78zp4boFB41xXN6ZpfDFDhQhasw1I3Zxk1EObbsHKCA/embed"></iframe><iframe width="385" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/YgTNzhioTdsXLnWGi9heYhy0xIvlYkcFbsOMJZ3FSe0/embed"></iframe><iframe width="385" height="620" style="border: 0px;" src="https://studio.code.org/projects/gamelab/uKQZEpdr0OVMCQAok9YFmrBt7yabTigWeKJMOj7WA6Y/embed"></iframe></section>
-    <section id="games"> <h1 id="GameH1">My Games</h1> <a href="https://studio.code.org/projects/minecraft_designer/4NHTb1uptCU_2t6nxmLA02wM5LnYCJO3jtJft4HKJvA"  target="_blank"><img src = "https://studio.code.org/v3/files/4NHTb1uptCU_2t6nxmLA02wM5LnYCJO3jtJft4HKJvA/.metadata/thumbnail.png"></a>
-        <a href="https://studio.code.org/projects/flappy/yBJG-7z2hIjpZXvvkOikRK8uF4eW4SO-Yba0IDMNyAQ" target="_blank"><img src ="https://studio.code.org/v3/files/yBJG-7z2hIjpZXvvkOikRK8uF4eW4SO-Yba0IDMNyAQ/.metadata/thumbnail.png"></a>
-        <a href="https://studio.code.org/projects/applab/8lmtwPv7KCIfTaBXCEw0jL-Weoo7GkD0pJpHIf991Gs" target="_blank"> <img src="https://studio.code.org/v3/files/8lmtwPv7KCIfTaBXCEw0jL-Weoo7GkD0pJpHIf991Gs/.metadata/thumbnail.png"></a>
+    <ul class="menu">
+        <li class="links"><a href="#apps">My Apps</a></li>
+        <li class="links"><a href="#games">My Games</a></li>
+        <li class="links"><a href="#My_Bot">My Bot</a></li>
+    </ul>
+    <section id="apps">
+        <h1 id="appH1">My Apps</h1>
+        <iframe width="385" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/78zp4boFB41xXN6ZpfDFDhQhasw1I3Zxk1EObbsHKCA/embed"></iframe><iframe width="385" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/YgTNzhioTdsXLnWGi9heYhy0xIvlYkcFbsOMJZ3FSe0/embed"></iframe><iframe width="385" height="620" style="border: 0px;" src="https://studio.code.org/projects/gamelab/uKQZEpdr0OVMCQAok9YFmrBt7yabTigWeKJMOj7WA6Y/embed"></iframe>
     </section>
-    <section id="My Bot">
-    <h1 id = "MyBotH1">My Bot</h1>
-    <iframe
-    allow="microphone;"
-    width="350"
-    height="430"
-    src="https://console.dialogflow.com/api-client/demo/embedded/personal-assistant">
-</iframe>
-      </section>
-</body>
-</html>
+    <section id="games">
+        <h1 id="GameH1">My Games</h1>
+        <div id="Games_slider" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <center><a href="https://studio.code.org/projects/minecraft_designer/4NHTb1uptCU_2t6nxmLA02wM5LnYCJO3jtJft4HKJvA" target="_blank"><img src="https://studio.code.org/v3/files/4NHTb1uptCU_2t6nxmLA02wM5LnYCJO3jtJft4HKJvA/.metadata/thumbnail.png"></a></center>
+                </div>
+                <div class="item">
+                    <center> <a href="https://studio.code.org/projects/flappy/yBJG-7z2hIjpZXvvkOikRK8uF4eW4SO-Yba0IDMNyAQ" target="_blank"><img src="https://studio.code.org/v3/files/yBJG-7z2hIjpZXvvkOikRK8uF4eW4SO-Yba0IDMNyAQ/.metadata/thumbnail.png"></a></center>
+                </div>
+                <div class="item">
+                    <center><a href="https://studio.code.org/projects/applab/8lmtwPv7KCIfTaBXCEw0jL-Weoo7GkD0pJpHIf991Gs" target="_blank"> <img src="https://studio.code.org/v3/files/8lmtwPv7KCIfTaBXCEw0jL-Weoo7GkD0pJpHIf991Gs/.metadata/thumbnail.png"></a></center>
+                </div>
+            </div>
+            <center><a href="#Games_slider" class="left carousel-control left_slide" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> </center>
+        <center><a href="#Games_slider" class="right carousel-control right_slide" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> </center>
+        </div>
+    </section>
+    <section id="My_Bot">
+        <h1 id="MyBotH1">My Bot</h1>
+        <iframe allow="microphone;" width="350" height="430" src="https://console.dialogflow.com/api-client/demo/embedded/personal-assistant">
+        </iframe>
+    </section>
+</body></html>
